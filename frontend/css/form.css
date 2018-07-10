@@ -1,0 +1,44 @@
+.drink_form{
+    margin-top:20px;
+    padding:10px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textinput{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-spacing: 0px;
+  text-align: center;
+  outline: none;
+}
+
+#formtext{
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+}
+
+/* This snippet of code was generated using: http://css3buttongenerator.com/ */
+
+.btn{
+    border-radius:5px;
+    text-align:center;
+    font-family: inherit; 
+    font-size: 20px;
+    color: #3C3D3F;
+    background: transparent;
+    border: 2px #3C3D3F solid;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover {
+  background: #3C3D3F;
+  color: #ffffff;
+}
