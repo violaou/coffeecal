@@ -4,6 +4,7 @@
   "description": "",
   "main": "dbparse.js",
   "dependencies": {
+    "express": "^4.16.3",
     "mongodb": "^3.0.4"
   },
   "devDependencies": {},

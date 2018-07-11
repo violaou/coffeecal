@@ -28,6 +28,10 @@ header h1{
 	text-align: center;
 }
 
+.resultview{
+	display: none;
+}
+
 footer{
     margin-top: 20px;
     text-align:center;

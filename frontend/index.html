@@ -1,3 +1,4 @@
+<!-- browser-sync start -s -b "google chrome" -f "./index.html" "css/*.css" "js/**" -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,25 +6,33 @@
     <title>Calorie</title>
     <link href="css/form.css" rel="stylesheet" type="text/css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="js/index.js"></script>
 </head>
-<!-- browser-sync start -s -b "google chrome" -f "./index.html" "css/*.css" "js/**" -->
 <body>
     <header>
         <h1 id="title">Calorie</h1>
         <h2> What's your limit for a drink?</h2>
     </header>
-
+    <!-- front query -->
     <form class="drink_form" id="input_form">
       <div id="formtext">
-        <input type="text" class="textinput">
+        <input type="text" class="textinput" id="calorie_input">
         <h2>calories</h2>
       </div>
       <input type="submit" class="btn"/>
     </form>
 
+    <!-- results table-->
+    <div class="resultview" id="res">
+      show me!
+      <div class="result" id="result_list">
+      </div>
+    </div>
+
+
     <footer>
         <a href='/credits.html'>credits</a>
     </footer>
-
+    <script src="js/index.js"></script>
 </body>
 </html>
