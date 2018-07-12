@@ -14,11 +14,18 @@ console.log("Hello, World!")
 // // Console will print the message
 // console.log('Server running at http://127.0.0.1:8081/');
 
-var express = require('express');
-var app = express();
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+const express = require('express'),
+  path = require('path'),
+  bodyParser = require('body-parser'),
+  app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(express.static('static'));
+
+app.get('/', function (req, res, next) {
+  res.sendFile("index.html");
 });
-app.listen(3004, function () {
-  console.log('Example app listening on port 3004!');
+app.listen(8000, function () {
+  console.log('Example app listening on port 8000!');
 });
