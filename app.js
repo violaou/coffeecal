@@ -1,5 +1,5 @@
 /* Hello, World! program in node.js */
-console.log("Hello, World!")
+console.log('Hello, World!')
 // var http = require("http");
 // http.createServer(function (request, response) {
 //    // Send the HTTP header
@@ -15,7 +15,7 @@ console.log("Hello, World!")
 // console.log('Server running at http://127.0.0.1:8081/');
 
 const express = require('express')
-const path = require('path')
+// const path = require('path')
 const bodyParser = require('body-parser')
 const app = express()
 

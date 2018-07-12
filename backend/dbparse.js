@@ -25,7 +25,7 @@ Tall 2% No Whip 354 mL 200 5 2.5 0.2 20 125 30 0 29 9 15% 0% 30% 0% 75
 
 */
 
-function generate_db (){
+function generateDB () {
   // new db;
   // file = open('menu.txt');
   // obj_array = file.makearray('/n').map(generate_entry); //map generate entry on each element of array
@@ -35,26 +35,26 @@ function generate_db (){
 }
 
 // returns a drink obj with desired info per line  of drink entry
-function generate_drink(i){
-  //regex: (Trenta|Venti®|Grande|Tall|Short|N\/A|Solo|Doppio|Triple|Quad|([0-9]*ml)).* returns group after size name found
+function generateDrink (i) {
+  // regex: (Trenta|Venti®|Grande|Tall|Short|N\/A|Solo|Doppio|Triple|Quad|([0-9]*ml)).* returns group after size name found
   // ^ doesnt on this: Brewed Coffee Traveler - Dark Roast 1 - 236 mL serving N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 130
-  var regex = /(Trenta|Venti®|Grande|Tall|Short|N\/A|Solo|Doppio|Triple|Quad|([0-9]*ml)).*/g;
-  var foundgroup = i.match(regex);
-  var info = foundgroup.match(/(?:\S+\s+){0}(\S+)/g);
-  var name = i.replace(foundgroup[0], '');
-  var size = info[0];
-  var milk = info[1];
-  var whip = 2; //TODO: options for whip: Whip, No Whip, N/A
-  var kcal = 2; //TODO: doesnt work b/c of whip option (N/A, whip, no whip)
-
+  var regex = /(Trenta|Venti®|Grande|Tall|Short|N\/A|Solo|Doppio|Triple|Quad|([0-9]*ml)).*/g
+  var foundgroup = i.match(regex)
+  var info = foundgroup.match(/(?:\S+\s+){0}(\S+)/g)
+  var name = i.replace(foundgroup[0], '')
+  var size = info[0]
+  var milk = info[1]
+  var whip = 2 // TODO: options for whip: Whip, No Whip, N/A
+  var kcal = 2 // TODO: doesnt work b/c of whip option (N/A, whip, no whip)
+  var newDrink = new Drink(name, size, milk, whip, kcal)
 }
 
-//drink object for eah type of drink
-function drink (name, size, milk, whip, kcal){
-  this.id=0;
-  this.name=name;
-  this.size=size;
-  this.milk=milk;
-  this.whip=whip;
-  this.kcal=kcal;
+// drink object for eah type of drink
+function Drink (name, size, milk, whip, kcal) {
+  this.id = 0
+  this.name = name
+  this.size = size
+  this.milk = milk
+  this.whip = whip
+  this.kcal = kcal
 }
