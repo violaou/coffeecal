@@ -2,23 +2,22 @@ html {overflow: -moz-scrollbars-vertical;}
 
 body {
 	background: #FFFFFF;
+	color: #3C3D3F;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	color: #3C3D3F;
-  text-align: center;
-  max-width: 800px;
   margin: auto;
+  max-width: 800px;
+  text-align: center;
 }
 
 header{
     display:flex;
 		flex-direction: column;
-    margin-top:36px;
     justify-content: center;
 }
 
 header h1{
-    margin: 0px;
+    margin: 0;
     padding-top:4px;
     width:100%;
     font-size:48px;

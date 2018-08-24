@@ -1,21 +1,21 @@
 .drink_form{
-    margin-top:20px;
-    padding:10px 10px 10px 10px;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    margin-top:20px;
+    padding:10px 10px 10px 10px;
 }
 
 .textinput{
   background-color: transparent;
+  border-spacing: 0;
   border-style: solid;
-  border-width: 0px 0px 3px 0px;
-  border-spacing: 0px;
-  text-align: center;
+  border-width: 0 0 3px 0;
   outline: none;
+  text-align: center;
 }
 
-#formtext{
+.formtext{
 	display: flex;
 	flex-direction: row;
   justify-content: center;
@@ -24,18 +24,18 @@
 /* This snippet of code was generated using: http://css3buttongenerator.com/ */
 
 .btn{
-    border-radius:5px;
-    text-align:center;
-    font-family: inherit; 
-    font-size: 20px;
-    color: #3C3D3F;
-    background: transparent;
-    border: 2px #3C3D3F solid;
-    padding: 10px 10px 10px 10px;
-    margin-top: 10px;
-    width: 140px;
-    margin-left: auto;
-    margin-right: auto;
+  background: transparent;
+  border: 2px #3C3D3F solid;
+  border-radius:5px;
+  color: #3C3D3F;
+  font-family: inherit;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+  text-align:center;
+  width: 140px;
 }
 
 .btn:hover {

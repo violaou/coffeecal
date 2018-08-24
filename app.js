@@ -17,6 +17,7 @@ console.log('Hello, World!')
 const express = require('express')
 // const path = require('path')
 const bodyParser = require('body-parser')
+var mongoose = require("mongoose");
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -29,3 +30,8 @@ app.get('/', function (req, res, next) {
 app.listen(8000, function () {
   console.log('Example app listening on port 8000!')
 })
+
+// code used from
+// www.jenniferbland.com/saving-data-to-mongodb-database-from-node-js-application-tutorial/
+mongoose.Promise = global.Promise;
+mongoose.connect("mongodb://localhost:27017/node-demo");
