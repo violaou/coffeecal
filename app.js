@@ -15,10 +15,10 @@ console.log('Hello, World!')
 // console.log('Server running at http://127.0.0.1:8081/');
 
 const express = require('express')
+const app = express()
 // const path = require('path')
 const bodyParser = require('body-parser')
 var mongoose = require("mongoose");
-const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json({limit: '50mb'}))
@@ -34,4 +34,4 @@ app.listen(8000, function () {
 // code used from
 // www.jenniferbland.com/saving-data-to-mongodb-database-from-node-js-application-tutorial/
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/node-demo");
+mongoose.connect("mongodb://localhost:27017/node-demo", { useNewUrlParser: true });
