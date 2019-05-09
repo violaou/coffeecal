@@ -2,22 +2,18 @@ Brewed Coffee - Dark Roast Short N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0%
 Brewed Coffee - Dark Roast Tall N/A N/A 354 mL 4 0.1 0 0 0 10 0 0 0 0.5 0% 0% 0% 0% 193
 Brewed Coffee - Dark Roast Grande N/A N/A 473 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 0% 0% 260
 Brewed Coffee - Dark Roast Venti® N/A N/A 591 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 2% 0% 340
-Brewed Coffee Traveler - Dark Roast 1 - 236 mL serving N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 130
 Brewed Coffee - Decaf Pike Place® Roast Short N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 15
 Brewed Coffee - Decaf Pike Place® Roast Tall N/A N/A 354 mL 4 0.1 0 0 0 10 0 0 0 0.5 0% 0% 0% 0% 20
 Brewed Coffee - Decaf Pike Place® Roast Grande N/A N/A 473 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 0% 0% 25
 Brewed Coffee - Decaf Pike Place® Roast Venti® N/A N/A 591 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 0% 0% 30
-Brewed Coffee Traveler - Decaf Pike Place® Roast 1 - 236 mL serving N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 15
 Brewed Coffee - Medium Roast Short N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 155
 Brewed Coffee - Medium Roast Tall N/A N/A 354 mL 4 0.1 0 0 0 10 0 0 0 0.5 0% 0% 0% 0% 235
 Brewed Coffee - Medium Roast Grande N/A N/A 473 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 0% 0% 310
 Brewed Coffee - Medium Roast Venti® N/A N/A 591 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 2% 0% 410
-Brewed Coffee Traveler - Medium Roast 1 - 236 mL serving N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 155
 Brewed Coffee - True North Blend Blonde Roast Short N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 180
 Brewed Coffee - True North Blend Blonde Roast Tall N/A N/A 354 mL 4 0.1 0 0 0 10 0 0 0 0.5 0% 0% 0% 0% 270
 Brewed Coffee - True North Blend Blonde Roast Grande N/A N/A 473 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 0% 0% 360
 Brewed Coffee - True North Blend Blonde Roast Venti® N/A N/A 591 mL 5 0.1 0 0 0 10 0 0 0 1 0% 0% 2% 0% 475
-Brewed Coffee Traveler - True North Blend Blonde Roast 1 - 236 mL serving N/A N/A 236 mL 3 0.1 0 0 0 5 0 0 0 0.3 0% 0% 0% 0% 180
 Caffè Misto Short Nonfat N/A 236 mL 35 0.1 0.1 0 0 45 5 0 5 4 6% 0% 10% 0% 75
 Caffè Misto Short 2% N/A 236 mL 50 2 1 0.1 10 50 5 0 5 4 6% 0% 10% 0% 75
 Caffè Misto Short Whole N/A 236 mL 70 3.5 2 0.1 10 50 5 0 5 3 4% 0% 10% 0% 75
@@ -1047,8 +1043,6 @@ Vanilla Bean Crème Frappuccino® Blended Crème Venti® Soy No Whip 709 mL 330 
 Vanilla Bean Crème Frappuccino® Blended Crème Venti® Soy Whip 709 mL 440 14 7 0.3 40 300 73 1 68 6 20% 0% 25% 10% 0
 Vanilla Bean Crème Frappuccino® Blended Crème Venti® Coconut No Whip 709 mL 310 4.5 4 0 0 290 69 0 67 0.5 0% 0% 0% 0% 0
 Vanilla Bean Crème Frappuccino® Blended Crème Venti® Coconut Whip 709 mL 430 15 11 0.3 40 300 73 0 70 1 15% 0% 2% 0% 0
-Caramel Apple Spice Kids N/A No Whip 236 mL 140 0 0 0 0 10 35 0 33 0 0% 0% 0% 0% 0
-Caramel Apple Spice Kids N/A Whip 236 mL 210 6 3.5 0.2 20 20 40 0 37 0.3 6% 0% 0% 0% 0
 Caramel Apple Spice Short N/A No Whip 236 mL 140 0 0 0 0 10 35 0 33 0 0% 0% 0% 0% 0
 Caramel Apple Spice Short N/A Whip 236 mL 210 6 3.5 0.2 20 20 40 0 37 0.3 6% 0% 0% 0% 0
 Caramel Apple Spice Tall N/A No Whip 354 mL 210 0 0 0 0 15 53 0 49 0 0% 0% 0% 0% 0
@@ -1057,16 +1051,6 @@ Caramel Apple Spice Grande N/A No Whip 473 mL 280 0 0 0 0 20 70 0 65 0 0% 0% 0% 
 Caramel Apple Spice Grande N/A Whip 473 mL 380 8 5 0.2 30 35 76 0 71 0.5 10% 0% 2% 0% 0
 Caramel Apple Spice Venti® N/A No Whip 591 mL 360 0 0 0 0 25 89 0 83 0 0% 0% 0% 0% 0
 Caramel Apple Spice Venti® N/A Whip 591 mL 450 8 5 0.2 30 40 95 0 88 0.5 10% 0% 2% 0% 0
-Hot Chocolate Kids Nonfat No Whip 236 mL 140 1.5 1 0 5 70 26 2 23 7 10% 0% 20% 15% 15
-Hot Chocolate Kids Nonfat Whip 236 mL 200 6 4 0.2 20 95 29 2 24 8 10% 2% 15% 20% 15
-Hot Chocolate Kids 2% No Whip 236 mL 170 4.5 3 0.1 15 80 26 2 22 7 10% 0% 20% 15% 15
-Hot Chocolate Kids 2% Whip 236 mL 230 10 6 0.3 30 85 28 2 24 7 15% 0% 20% 20% 15
-Hot Chocolate Kids Whole No Whip 236 mL 190 7 4 0.2 15 70 26 2 22 7 8% 0% 20% 15% 15
-Hot Chocolate Kids Whole Whip 236 mL 250 12 7 0.3 35 80 28 2 24 7 15% 0% 20% 20% 15
-Hot Chocolate Kids Soy No Whip 236 mL 150 3.5 1 0 0 60 23 3 18 6 6% 0% 20% 25% 15
-Hot Chocolate Kids Soy Whip 236 mL 210 9 4.5 0.2 20 65 25 3 20 6 10% 0% 20% 25% 15
-Hot Chocolate Kids Coconut No Whip 236 mL 140 5 4.5 0 0 70 23 2 20 2 0% 0% 0% 15% 15
-Hot Chocolate Kids Coconut Whip 236 mL 200 10 8 0.2 20 75 26 2 22 2 6% 0% 2% 20% 15
 Hot Chocolate Short Nonfat No Whip 236 mL 140 1.5 1 0 5 70 26 2 23 7 10% 0% 20% 15% 15
 Hot Chocolate Short Nonfat Whip 236 mL 200 6 4 0.2 20 95 29 2 24 8 10% 2% 15% 20% 15
 Hot Chocolate Short 2% No Whip 236 mL 170 4.5 3 0.1 15 80 26 2 22 7 10% 0% 20% 15% 15
@@ -1107,7 +1091,6 @@ Hot Chocolate Venti® Soy No Whip 591 mL 370 9 2.5 0 0 160 55 7 44 15 15% 0% 50%
 Hot Chocolate Venti® Soy Whip 591 mL 450 17 7 0.2 25 170 58 7 46 15 25% 0% 50% 60% 35
 Hot Chocolate Venti® Coconut No Whip 591 mL 360 13 11 0 0 180 57 5 48 4 0% 0% 2% 40% 35
 Hot Chocolate Venti® Coconut Whip 591 mL 430 20 15 0.2 25 190 60 5 51 5 8% 0% 4% 45% 35
-Lemonade Kids N/A N/A 354 mL 80 0 0 0 0 0 21 0 21 0.1 0% 25% 0% 0% 0
 Lemonade Tall N/A N/A 354 mL 80 0 0 0 0 0 21 0 21 0.1 0% 25% 0% 0% 0
 Lemonade Grande N/A N/A 473 mL 110 0 0 0 0 1 29 0 29 0.2 0% 30% 0% 0% 0
 Lemonade Venti® N/A N/A 709 mL 150 0 0 0 0 1 41 0 41 0.2 0% 45% 0% 0% 0
@@ -1127,21 +1110,14 @@ Milk Venti® 2% N/A 709 mL 370 15 7 0.4 60 350 36 0 36 24 40% 2% 80% 2% 0
 Milk Venti® Whole N/A 709 mL 450 24 14 0.5 75 320 36 0 36 23 35% 0% 80% 2% 0
 Milk Venti® Soy N/A 709 mL 300 12 1.5 0 0 280 24 3 18 21 30% 0% 90% 40% 0
 Milk Venti® Coconut N/A 709 mL 250 16 15 0 0 290 25 0 23 2 0% 0% 0% 0% 0
-Skinny Hot Chocolate Kids Nonfat N/A 236 mL 80 1 0.5 0 5 85 12 2 8 7 10% 0% 20% 30% 0
 Skinny Hot Chocolate Short Nonfat N/A 236 mL 80 1 0.5 0 5 85 12 2 8 7 10% 0% 20% 30% 0
 Skinny Hot Chocolate Tall Nonfat N/A 354 mL 130 1.5 1 0.1 5 125 18 3 13 11 15% 0% 30% 45% 0
 Skinny Hot Chocolate Grande Nonfat N/A 473 mL 170 1.5 1 0.1 5 160 24 4 17 14 20% 0% 40% 60% 0
 Skinny Hot Chocolate Venti® Nonfat N/A 591 mL 210 2 1.5 0.1 10 210 30 5 21 18 25% 0% 50% 70% 0
-Steamed Apple Juice Kids N/A N/A 236 mL 120 0 0 0 0 10 30 0 27 0 0% 0% 0% 0% 0
 Steamed Apple Juice Short N/A N/A 236 mL 120 0 0 0 0 10 30 0 27 0 0% 0% 0% 0% 0
 Steamed Apple Juice Tall N/A N/A 354 mL 170 0 0 0 0 15 44 0 39 0 0% 0% 0% 0% 0
 Steamed Apple Juice Grande N/A N/A 473 mL 220 0 0 0 0 20 55 0 50 0 0% 0% 0% 0% 0
 Steamed Apple Juice Venti® N/A N/A 591 mL 280 0 0 0 0 25 69 0 62 0 0% 0% 0% 0% 0
-Steamed Milk Kids Nonfat N/A 236 mL 70 0.2 0.1 0 5 85 10 0 10 7 10% 0% 25% 0% 0
-Steamed Milk Kids 2% N/A 236 mL 100 4 2 0.1 15 95 10 0 10 7 10% 0% 20% 0% 0
-Steamed Milk Kids Whole N/A 236 mL 120 7 4 0.2 20 90 10 0 10 6 10% 0% 20% 0% 0
-Steamed Milk Kids Soy N/A 236 mL 80 3 0.4 0 0 75 6 1 5 5 8% 0% 20% 10% 0
-Steamed Milk Kids Coconut N/A 236 mL 70 5 4.5 0 0 85 7 0 7 0.5 0% 0% 0% 0% 0
 Steamed Milk Short Nonfat N/A 236 mL 70 0.2 0.1 0 5 85 10 0 10 7 10% 0% 25% 0% 0
 Steamed Milk Short 2% N/A 236 mL 100 4 2 0.1 15 95 10 0 10 7 10% 0% 20% 0% 0
 Steamed Milk Short Whole N/A 236 mL 120 7 4 0.2 20 90 10 0 10 6 10% 0% 20% 0% 0
@@ -1162,11 +1138,6 @@ Steamed Milk Venti® 2% N/A 591 mL 260 10 5 0.3 40 240 25 0 25 17 30% 2% 60% 0% 
 Steamed Milk Venti® Whole N/A 591 mL 310 17 10 0.5 50 220 25 0 25 16 25% 0% 50% 2% 0
 Steamed Milk Venti® Soy N/A 591 mL 200 8 1 0 0 190 16 2 12 14 20% 0% 60% 25% 0
 Steamed Milk Venti® Coconut N/A 591 mL 180 12 11 0 0 220 18 0 17 1 0% 0% 0% 0% 0
-Vanilla Steamer Kids Nonfat N/A 236 mL 100 0.2 0.1 0 5 80 19 0 19 6 10% 0% 20% 0% 0
-Vanilla Steamer Kids 2% N/A 236 mL 130 4 2 0.1 15 90 19 0 19 6 10% 0% 20% 0% 0
-Vanilla Steamer Kids Whole N/A 236 mL 150 6 3.5 0.2 20 80 19 0 19 6 10% 0% 20% 0% 0
-Vanilla Steamer Kids Soy N/A 236 mL 110 3 0.4 0 0 70 15 1 14 5 8% 0% 20% 10% 0
-Vanilla Steamer Kids Coconut N/A 236 mL 110 4.5 4 0 0 80 16 0 16 0.5 0% 0% 0% 0% 0
 Vanilla Steamer Short Nonfat N/A 236 mL 100 0.2 0.1 0 5 80 19 0 19 6 10% 0% 20% 0% 0
 Vanilla Steamer Short 2% N/A 236 mL 130 4 2 0.1 15 90 19 0 19 6 10% 0% 20% 0% 0
 Vanilla Steamer Short Whole N/A 236 mL 150 6 3.5 0.2 20 80 19 0 19 6 10% 0% 20% 0% 0
@@ -1187,16 +1158,6 @@ Vanilla Steamer Venti® 2% N/A 591 mL 340 10 5 0.3 40 230 47 0 47 16 25% 2% 50% 
 Vanilla Steamer Venti® Whole N/A 591 mL 390 16 9 0.5 50 210 47 0 47 15 25% 0% 50% 2% 0
 Vanilla Steamer Venti® Soy N/A 591 mL 280 7 1 0 0 170 38 2 35 13 20% 0% 50% 25% 0
 Vanilla Steamer Venti® Coconut N/A 591 mL 270 11 11 0 0 200 41 0 40 1 0% 0% 0% 0% 0
-White Hot Chocolate Kids Nonfat No Whip 236 mL 180 3 2.5 0 5 125 31 0 30 8 10% 0% 25% 0% 0
-White Hot Chocolate Kids Nonfat Whip 236 mL 230 8 6 0.2 25 130 32 0 32 8 15% 0% 25% 0% 0
-White Hot Chocolate Kids 2% No Whip 236 mL 210 6 4 0.1 15 135 30 0 30 8 10% 2% 25% 0% 0
-White Hot Chocolate Kids 2% Whip 236 mL 260 11 7 0.3 35 140 32 0 31 8 15% 2% 25% 0% 0
-White Hot Chocolate Kids Whole No Whip 236 mL 220 8 5 0.2 20 125 30 0 30 7 8% 0% 25% 0% 0
-White Hot Chocolate Kids Whole Whip 236 mL 280 14 9 0.3 40 130 32 0 31 8 15% 0% 25% 0% 0
-White Hot Chocolate Kids Soy No Whip 236 mL 190 5 2.5 0 5 115 27 1 26 6 6% 0% 25% 8% 0
-White Hot Chocolate Kids Soy Whip 236 mL 240 11 6 0.2 20 120 29 1 27 7 10% 0% 25% 8% 0
-White Hot Chocolate Kids Coconut No Whip 236 mL 180 7 6 0 5 125 28 0 28 2 0% 0% 6% 0% 0
-White Hot Chocolate Kids Coconut Whip 236 mL 230 12 9 0.2 20 130 30 0 29 3 6% 0% 6% 0% 0
 White Hot Chocolate Short Nonfat No Whip 236 mL 180 3 2.5 0 5 125 31 0 30 8 10% 0% 25% 0% 0
 White Hot Chocolate Short Nonfat Whip 236 mL 230 8 6 0.2 25 130 32 0 32 8 15% 0% 25% 0% 0
 White Hot Chocolate Short 2% No Whip 236 mL 210 6 4 0.1 15 135 30 0 30 8 10% 2% 25% 0% 0
@@ -1237,18 +1198,3 @@ White Hot Chocolate Venti® Soy No Whip 591 mL 470 14 7 0 5 290 69 2 65 16 15% 2
 White Hot Chocolate Venti® Soy Whip 591 mL 540 21 11 0.2 30 300 71 2 67 17 25% 2% 60% 20% 0
 White Hot Chocolate Venti® Coconut No Whip 591 mL 450 17 15 0 5 310 71 0 69 6 0% 2% 15% 0% 0
 White Hot Chocolate Venti® Coconut Whip 591 mL 520 24 20 0.2 30 320 73 0 71 6 8% 2% 15% 0% 0
-
-Add-Ons
-Sweetened Whipped Cream Short - Hot N/A N/A N/A 50 5 3 0.2 20 5 1 0 1 0.3 6% 0% 0% 0% 0
-Sweetened Whipped Cream Tall - Hot N/A N/A N/A 60 6 4 0.2 20 5 2 0 1 0.3 6% 0% 0% 0% 0
-Sweetened Whipped Cream Grande/Venti® - Hot N/A N/A N/A 70 7 4.5 0.2 25 5 2 0 2 0.4 8% 0% 2% 0% 0
-Sweetened Whipped Cream Tall - Cold N/A N/A N/A 80 8 5 0.2 30 10 2 0 2 0.4 10% 0% 2% 0% 0
-Sweetened Whipped Cream Grande/Venti® - Cold N/A N/A N/A 110 11 7 0.3 40 10 3 0 2 1 15% 0% 2% 0% 0
-Flavoured Syrup 1 pump N/A N/A N/A 20 0 0 0 0 0 5 0 5 0 0% 0% 0% 0% 0
-Flavoured Sugar-Free Syrup 1 pump N/A N/A N/A 0 0 0 0 0 5 0 0 0 0 0% 0% 0% 0% 0
-Mocha Syrup 1 pump N/A N/A N/A 35 0.5 0 0 0 0 7 1 5 1 0% 0% 0% 6% 5
-Mocha Drizzle N/A N/A N/A N/A 10 0.5 0.1 0 0 0 1 0 1 0.2 0% 0% 0% 2% 0
-Caramel Drizzle N/A N/A N/A N/A 15 0 0.3 0 0 4 2 0 2 0 0% 0% 0% 0% 0
-Espresso Shot 1 shot N/A N/A N/A 5 0.1 0 0 0 0 1 0 0 0.4 0% 0% 0% 0% 75
-Matcha Green Tea Powder 1 scoop N/A N/A N/A 25 0.1 0 0 0 0 6 0 5 0.3 0% 4% 0% 2% 25
-Protein & Fibre Powder 1 scoop N/A N/A N/A 30 0.1 0.1 0 0 45 1 1 0 6 0% 0% 0% 2% 0
