@@ -40,22 +40,31 @@ function Drink (name, size, milk, whip, kcal) {
 }
 
 /*process menu file line by line, create drink object into array */
-const readInterface = readline.createInterface({
-    input: fs.createReadStream('normal_menu.txt'),
-    output: process.stdout,
-    console: false
-});
+var readFile = (callback) => {
+  var arr = [],
+      readInterface = readline.createInterface({
+      input: fs.createReadStream('normal_menu.txt')
+      //,output: process.stdout
+    });
 
-var arr = []
-readInterface.on('line', function(line) {
-  var drink = generateDrink(line);
-  arr.push(drink);
-});
+  readInterface.on('line', function(line) {
+    var drink = generateDrink(line);
+    arr.push(drink);
+  }).on('close', () => {
+    console.log(arr);
+  });
+};
 
-/*JSON store it in file*/
+//usage
+readFile('normal_menu.txt', (arr) => {
+  console.log(arr.length)
+})
+
+/*JSON store it in file
 var jsonData = JSON.stringify(arr)
 fs.writeFile("test.txt", jsonData, function(err) {
     if (err) {
         console.log(err);
     }
 });
+*/
