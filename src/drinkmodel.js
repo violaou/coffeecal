@@ -5,9 +5,11 @@ const readline = require('readline');
 const fs = require('fs');
 let mongoose = require("mongoose");
 
+mongoose.set('debug', true);
+
 // use moongoose to connect
-const server = 'localhost:27017'; // REPLACE WITH YOUR DB SERVER
-const database = 'coffeecal';      // REPLACE WITH YOUR DB NAME
+const server = 'localhost:27017';
+const database = 'coffeecal';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(`mongodb://${server}/${database}`, { useNewUrlParser: true });
@@ -17,13 +19,12 @@ db.once('open', function() {
   console.log('Database connection successful')
 });
 
-// Create schema
+
 /*A Mongoose model is a wrapper on the Mongoose schema.
 A Mongoose schema defines the structure of the document, default values,
 validators, etc., A Mongoose model provides an interface to the Database
 or creating, querying, updating, deleting records, etc.*/
-var Schema = mongoose.Schema;
-const drinkSchema = new Schema({
+var drinkSchema = new mongoose.Schema({
   name: String,
   size: String,
   milk: String,
@@ -32,7 +33,7 @@ const drinkSchema = new Schema({
 });
 
 // NOTE: methods must be added to the schema before compiling it with mongoose.model()
-drinkSchema.methods.speak = function () {
+/*drinkSchema.methods.speak = function () {
   var greeting = this.name
     ? "My name is " + this.name
     : "I don't have a name";
@@ -42,33 +43,34 @@ drinkSchema.methods.speak = function () {
 drinkSchema.methods.findSimilarSize = function() {
   return this.model('Drinks').find({ type: this.size });
 };
+*/
 
 // Model creation, a class in which we construct documents
 var Drinks = mongoose.model('Drinks', drinkSchema);
-//document -> a drink with properties and behaviours as our Schema
-//_id property is a MongoDB construct and the database will automatically generate one for you if you do not supply one
+
 Drinks.estimatedDocumentCount({}, function(err, count) {
     if (err) { return handleError(err) } //handle possible errors
-    console.log(count)
+    console.log(count + " objects counted");
 
     if (count == 0) {
       addDrinks();
+      console.log("repopulating database...");
     }
 })
-//mochafrap.speak(); // "My name is Grande Mocha Frappucino"
-//sample query, find all documents with name pro that begins with mocha and returns array of Drinks to callback.
+
+// print out all drinks
 var query = Drinks.find();
 //query.select('name');
 query.exec(function(err, drink) {
-  console.log(drink);
+  //console.log(drink);
 });
 
+//delete all documents
+//clearDrink();
 function clearDrink() {
-  //delete all items
   var query = Drinks.deleteMany({});
-  //query.select('name');
   query.exec(function(err, drink) {
-    console.log(drink);
+    //console.log(drink);
   });
 }
 
@@ -82,7 +84,7 @@ function generateDrink (paragraph) {
 
   var size = info[0];
   var milk = info[1];
-  // if No Whip
+  // if No Whip option
   if (info[2] == "No"){
     var whip = info[2]+info[3];
     var kcal = info[6];
@@ -90,7 +92,7 @@ function generateDrink (paragraph) {
     var whip = info[2];
     var kcal = info[5];
   }
-
+  // new document
   var newDrink = new Drinks({
     name: name,
     size: size,
@@ -126,3 +128,5 @@ function addDrinks(){
     console.log(arr.length)
   })
 }
+
+module.exports = Drinks;
