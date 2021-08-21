@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /**
  * Generate Drinks and store them into JSON format from the raw files.
  */
@@ -18,22 +19,24 @@ function generateDrink(paragraph: string): Drink|undefined {
     const name: string | null = nameMatch ? nameMatch[0] : null;
 
     if (info && name) {
-      console.log(info);
-
-      const whip = (info[2] === 'No' && !(info[2].includes('N/A')));
+      const whip = (info[2].includes('Whip'));
+      // Espresso Con Panna has an extra category after whip...
+      const kcal = name.includes('Espresso Con Panna')
+        ? parseInt(info[4], 10)
+        : parseInt(whip ? info[3] : info[4].includes('mL') ? info[3] : info[4], 10);
       const drink: Drink = {
         name,
         size: info[0] as DrinkSize,
-        milk: info[1] as Milk,
-        whip: (whip ? info[2] : info[2] + info[3]) as Whip,
-        kcal: parseInt(whip ? info[3] : info[4], 10),
+        milk: (info[1].includes('N/A') ? null : info[1]) as Milk,
+        whip,
+        kcal,
       };
       return drink;
     }
   }
 }
 /* process menu file line by line, create drink object into array */
-function readIn(): void {
+function readIn() {
   const arr: { [name: string]: Drink } = {};
   lineReader.eachLine('./raw/normal_menu.txt', (line: string) => {
     const drink = generateDrink(line);

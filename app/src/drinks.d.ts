@@ -11,12 +11,11 @@ type DrinkSize =
     | 'Triple'
     | 'Quad';
 type Milk = 'Soy' | 'Coconut' | 'Nonfat' | 'Oat' | 'Whole' | '2%';
-type Whip = 'No Whip' | 'Whip';
 
 type Drink = {
     name: string;
-    size?: DrinkSize;
-    milk?: Milk;
-    whip?: Whip;
+    size: DrinkSize;
+    milk: Milk;
+    whip: boolean;
     kcal: number;
 }

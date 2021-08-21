@@ -39,6 +39,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error'], // JSX not allowed in files with extension ‘.tsx’
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }], // Missing file extension ‘tsx’ for ‘./App’
     '@typescript-eslint/no-shadow': ['error'],
-    '@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
+    '@typescript-eslint/explicit-function-return-type': ['off', { allowExpressions: true }],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };

@@ -1,7 +1,3 @@
-/*jshint esversion: 6 */
-
-import { Drink } from "./parseMenuItems";
-
 /*
 Product Name (1)
 Size (2)
@@ -24,7 +20,6 @@ Vitamin C (%DV)
 Calcium (%DV)
 Iron (%DV)
 Caffeine (mg)
-
 
 Caramel Brûlé Latte
 Short
@@ -79,33 +74,32 @@ possible ways to parse:
   cut doc into 21 per line chunks and then parse each chunk (is this more efficent in javascript?)
 */
 
-
 // returns a drink obj with desired info per 21 lines of drinks
-function generateHolidayDrink(paragraph: string): Drink | undefined {
-    if (paragraph) {
-        const infoMatch = paragraph.match(REGEX);
-        const nameMatch = paragraph.match(NAME_REGEX);
-        let info: RegExpMatchArray | null = infoMatch ? infoMatch[0].match(LINE_REGEX) : null;
-        let name: string| null = nameMatch ? nameMatch[0] : '';
+// function generateHolidayDrink(paragraph: string): Drink | undefined {
+//     if (paragraph) {
+//         const infoMatch = paragraph.match(REGEX);
+//         const nameMatch = paragraph.match(NAME_REGEX);
+//         let info: RegExpMatchArray | null = infoMatch ? infoMatch[0].match(LINE_REGEX) : null;
+//         let name: string| null = nameMatch ? nameMatch[0] : '';
 
-        if (info) {
-            const whip = info[2] === "No";
-              var whipp = function () {
-                var term = info[2]
-                if (term === 'No') {
-                info = info.slice(4)
-                return 'No Whip'
-                }
-                info = info.slice(3)
-                return term // Whip, N/A
-            }
-            const drink: Drink = {
-                name: name,
-                size: info[0] as DrinkSize,
-                milk: info[1] as Milk,
-                whip: (whip ? info[2] : info[2] + info[3]) as Whip,
-                kcal: parseInt(whip ? info[3] : info[4]),
-            }
-            return drink;
-        }
-    }
+//         if (info) {
+//             const whip = info[2] === "No";
+//               var whipp = function () {
+//                 var term = info[2]
+//                 if (term === 'No') {
+//                 info = info.slice(4)
+//                 return 'No Whip'
+//                 }
+//                 info = info.slice(3)
+//                 return term // Whip, N/A
+//             }
+//             const drink: Drink = {
+//                 name: name,
+//                 size: info[0] as DrinkSize,
+//                 milk: info[1] as Milk,
+//                 whip: (whip ? info[2] : info[2] + info[3]) as Whip,
+//                 kcal: parseInt(whip ? info[3] : info[4]),
+//             }
+//             return drink;
+//         }
+//     }
