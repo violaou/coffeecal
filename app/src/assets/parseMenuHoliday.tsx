@@ -1,3 +1,4 @@
+export {};
 /*
 Product Name (1)
 Size (2)

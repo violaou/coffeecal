@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-nested-ternary */
 /**
  * Generate Drinks and store them into JSON format from the raw files.
@@ -20,10 +21,11 @@ function generateDrink(paragraph: string): Drink|undefined {
 
     if (info && name) {
       const whip = (info[2].includes('Whip'));
+
       // Espresso Con Panna has an extra category after whip...
       const kcal = name.includes('Espresso Con Panna')
         ? parseInt(info[4], 10)
-        : parseInt(whip ? info[3] : info[4].includes('mL') ? info[3] : info[4], 10);
+        : parseInt(info[5].includes('mL') ? info[6] : info[5], 10);
       const drink: Drink = {
         name,
         size: info[0] as DrinkSize,
@@ -37,19 +39,16 @@ function generateDrink(paragraph: string): Drink|undefined {
 }
 /* process menu file line by line, create drink object into array */
 function readIn() {
-  const arr: { [name: string]: Drink } = {};
+  const arr: Drink[] = [];
   lineReader.eachLine('./raw/normal_menu.txt', (line: string) => {
     const drink = generateDrink(line);
-    // console.log(drink);
-    if (drink) {
-      const hash = objectHash.sha1(drink); // uniqueId
-      arr[hash] = drink;
-    }
+    if (drink) arr.push(drink);
   }, (err) => {
     if (err) throw err;
     /* JSON store it in file */
     const data = JSON.stringify(arr);
-    fs.writeFile('./data/test.txt', data, () => {
+    console.log('Drinks json generated.');
+    fs.writeFile('./data/drinks.json', data, () => {
       if (err) console.log(err);
     });
   });
@@ -57,4 +56,3 @@ function readIn() {
 
 // run stuff here
 readIn();
-console.log('Drinks txt generated.');

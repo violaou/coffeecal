@@ -31,15 +31,18 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off',
     'no-shadow': 'off',
-    'react/prop-types': 'off',
+    'no-unused-vars': 'off', // duplicates
     'import/prefer-default-export': 'off',
     'import/extensions': ['error', 'ignorePackages', { ts: 'never', tsx: 'never' }],
     'consistent-return': ['warn', { treatUndefinedAsUnspecified: true }],
     // TYPESCRIPT
     '@typescript-eslint/no-use-before-define': ['error'], // JSX not allowed in files with extension ‘.tsx’
-    'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }], // Missing file extension ‘tsx’ for ‘./App’
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/explicit-function-return-type': ['off', { allowExpressions: true }],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    // REACT
+    'react/no-array-index-key': 'off',
+    'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }], // Missing file extension ‘tsx’ for ‘./App’
+    'react/prop-types': 'off',
   },
 };
