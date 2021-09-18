@@ -13,9 +13,9 @@ type DrinkSize =
 type Milk = 'Soy' | 'Coconut' | 'Nonfat' | 'Oat' | 'Whole' | '2%';
 
 type Drink = {
-    name: string;
-    size: DrinkSize;
-    milk: Milk;
-    whip: boolean;
-    kcal: number;
-}
+    name: string
+    size: DrinkSize
+    milk: Milk
+    whip: boolean
+    kcal: number
+};

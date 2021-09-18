@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 module.exports = {
   env: {
     browser: true,
@@ -29,6 +30,18 @@ module.exports = {
     },
   ],
   rules: {
+    'semi': 'off',
+    '@typescript-eslint/semi': ['error'],
+    '@typescript-eslint/member-delimiter-style': ['error', {
+      multiline: {
+        delimiter: 'none', // 'none' or 'semi' or 'comma'
+        requireLast: true,
+      },
+      singleline: {
+        delimiter: 'semi', // 'semi' or 'comma'
+        requireLast: false,
+      },
+    }],
     'no-use-before-define': 'off',
     'no-shadow': 'off',
     'no-unused-vars': 'off', // duplicates
