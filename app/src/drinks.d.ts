@@ -1,5 +1,5 @@
 type DrinkSize =
-    | 'Short'
+    'Short'
     | 'Tall'
     | 'Grande'
     | 'Venti'

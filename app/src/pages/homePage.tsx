@@ -8,7 +8,6 @@ export default class HomePage extends Component {
     return (
       <div className="App">
         <div className="app-slide">
-          <h3>CoffeeCal</h3>
           <Link to="/startDrink">
             <Button variant="outlined" className="text-btn">start</Button>
           </Link>

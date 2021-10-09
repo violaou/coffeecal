@@ -1,11 +1,26 @@
 .App {
   text-align: center;
+  width: 100%;
+  .app-slide {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    .drink-label {
+      width: 100%;
+    }
+  }
 }
 
 a {
   text-decoration: none;
 }
 
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 // .app-slide {
 //   background-color: #282c34;
 //   min-height: 100vh;

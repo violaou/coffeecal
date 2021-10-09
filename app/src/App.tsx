@@ -32,21 +32,15 @@ const ThemeBtn = () => {
 export default function ToggleColorMode() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [mode, setMode] = React.useState<'light' | 'dark'>(prefersDarkMode ? 'dark' : 'light');
-  const colorMode = React.useMemo(
-    () => ({
-      toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-      },
-    }),
-    [],
-  );
+  const colorMode = React.useMemo(() => ({
+    toggleColorMode: () => {
+      setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+    },
+  }),
+  []);
 
   const theme = React.useMemo(
-    () => createTheme({
-      palette: {
-        mode,
-      },
-    }),
+    () => createTheme({ palette: { mode } }),
     [mode],
   );
 
@@ -56,8 +50,8 @@ export default function ToggleColorMode() {
         <Box
           sx={{
             display: 'flex',
-            width: '100vw',
-            height: '100vh',
+            width: 'inherit',
+            height: 'inherit',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
@@ -67,7 +61,11 @@ export default function ToggleColorMode() {
             p: 3,
           }}
         >
-          <ThemeBtn />
+          <div className="titlebar">
+            <h1>Drink Calculator</h1>
+            <ThemeBtn />
+
+          </div>
           <Switch>
             <Route path="/" exact component={HomePage} />
             <Route path="/startDrink" exact component={DrinkList} />
