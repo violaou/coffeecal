@@ -1,0 +1,10 @@
+[
+    { "name": "Cinnamon Dolce Sprinkles", "calories":"100"},
+    { "name": "Caramel Drizzle", "calories":"100"},
+    { "name": "Strawberry Drizzle", "calories":"100"},
+    { "name": "Mocha Drizzle", "calories":"100"},
+    { "name": "Cold Foam", "calories":"100", "coffeeOnly": true},
+    { "name": "Pumpkin Cream Cold Foam", "calories":"100", "coffeeOnly": true},
+    { "name": "Salted Caramel Cream Cold Foam", "calories":"100", "coffeeOnly": true},
+    { "name": "Frappuccino Chips", "calories":"100", "frapOnly": true}
+]

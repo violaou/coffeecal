@@ -1,0 +1,19 @@
+[
+    { "name": "Apple Brown Sugar Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Brown Sugar Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Caramel Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Cinnamon Dolce Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Classic Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Funnel Cake Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Hazelnut Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Peppermint Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Raspberry Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Toffee Nut Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Vanilla Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Sugar Free Vanilla Syrup", "calories":"100", "type": "syrup"},
+    { "name": "Mocha Sauce", "calories":"100", "type": "sauce"},
+    { "name": "Dark Caramel Sauce", "calories":"100", "type": "sauce"},
+    { "name": "Pumpkin Sauce", "calories":"100", "type": "sauce"},
+    { "name": "White Chocolate Mocha Sauce", "calories":"100", "type": "sauce"},
+    { "name": "Frappuccino Roast", "calories":"100", "type": "frap"}
+]

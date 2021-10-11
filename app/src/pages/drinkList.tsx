@@ -12,18 +12,6 @@ let coldCoffee: string[];
 let coldTea: string[];
 let coldDrinks: string[];
 
-const size: DrinkSize[] = [
-  'Short',
-  'Tall',
-  'Grande',
-  'Venti',
-  'Trenta',
-  'Solo',
-  'Doppio',
-  'Triple',
-  'Quad',
-];
-
 function sortAlphabetically(strList: string[]) {
   return strList.sort((a, b) => -b.localeCompare(a));
 }
@@ -101,30 +89,15 @@ const uniqueNames = sortCategories(Array.from(
 ));
 
 export const DrinkList = () => (
-  <div className="App">
-    <div className="app-slide">
-      <h3>Select a Drink:</h3>
-      <Autocomplete
-        disablePortal
-        selectOnFocus
-        disableClearable
-        autoComplete
-        className="drink-label"
-        id="combo-box-demo"
-        options={uniqueNames}
-        groupBy={categories}
-        renderInput={(params) => <TextField {...params} label="Drinks" />}
-      />
-      <h3>Size:</h3>
-      <Autocomplete
-        disablePortal
-        selectOnFocus
-        disableClearable
-        autoComplete
-        options={size}
-        sx={{ width: 300 }}
-        renderInput={(params) => <TextField {...params} label="Size" />}
-      />
-    </div>
-  </div>
+  <Autocomplete
+    disablePortal
+    selectOnFocus
+    disableClearable
+    autoComplete
+    className="drink-label"
+    id="combo-box-demo"
+    options={uniqueNames}
+    groupBy={categories}
+    renderInput={(params) => <TextField {...params} label="" />}
+  />
 );

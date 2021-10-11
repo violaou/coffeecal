@@ -9,11 +9,9 @@ import Box from '@mui/material/Box';
 import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-
 import './App.scss';
-
-import { DrinkList } from './pages/drinkList';
 import HomePage from './pages/homePage';
+import { DrinkBase } from './pages/drinkSelect';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
@@ -68,7 +66,7 @@ export default function ToggleColorMode() {
           </div>
           <Switch>
             <Route path="/" exact component={HomePage} />
-            <Route path="/startDrink" exact component={DrinkList} />
+            <Route path="/startDrink" exact component={DrinkBase} />
           </Switch>
         </Box>
       </ThemeProvider>
