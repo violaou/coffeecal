@@ -1,6 +1,6 @@
 /* eslint-disable no-else-return */
 /* eslint-disable react/jsx-props-no-spreading */
-import { Autocomplete, TextField } from '@mui/material';
+import { Autocomplete, TextField, Container } from '@mui/material';
 import * as React from 'react';
 import drinkJSON from '../assets/data/drinks.json';
 
@@ -88,16 +88,19 @@ const uniqueNames = sortCategories(Array.from(
   new Set(list.map((drink) => drink.name)),
 ));
 
-export const DrinkList = () => (
-  <Autocomplete
-    disablePortal
-    selectOnFocus
-    disableClearable
-    autoComplete
-    className="drink-label"
-    id="combo-box-demo"
-    options={uniqueNames}
-    groupBy={categories}
-    renderInput={(params) => <TextField {...params} label="" />}
-  />
+export const DrinkList = (label?: { label: string }) => (
+  <Container>
+    <h3>{label}</h3>
+    <Autocomplete
+      disablePortal
+      selectOnFocus
+      disableClearable
+      autoComplete
+      className="drink-label"
+      id="combo-box-demo"
+      options={uniqueNames}
+      groupBy={categories}
+      renderInput={(params) => <TextField {...params} label="" />}
+    />
+  </Container>
 );

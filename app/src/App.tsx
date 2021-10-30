@@ -11,7 +11,7 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import './App.scss';
 import HomePage from './pages/homePage';
-import { DrinkBase } from './pages/drinkSelect';
+import { DrinkBase } from './pages/drinkMain';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
@@ -62,7 +62,6 @@ export default function ToggleColorMode() {
           <div className="titlebar">
             <h1>Drink Calculator</h1>
             <ThemeBtn />
-
           </div>
           <Switch>
             <Route path="/" exact component={HomePage} />

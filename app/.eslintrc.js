@@ -31,6 +31,7 @@ module.exports = {
   ],
   rules: {
     'semi': 'off',
+    'react/destructuring-assignment': 'off',
     '@typescript-eslint/semi': ['error'],
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: {
