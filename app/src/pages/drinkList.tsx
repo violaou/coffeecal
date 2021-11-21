@@ -84,13 +84,15 @@ function categories(drink: string): string {
 }
 
 const list = drinkJSON;
-const uniqueNames = sortCategories(Array.from(
+const uniqueNames: string[] = sortCategories(Array.from(
   new Set(list.map((drink) => drink.name)),
 ));
 
-export const DrinkList = (label?: { label: string }) => (
+export const DrinkList = (
+  prop: { label: string },
+) => (
   <Container>
-    <h3>{label}</h3>
+    <h3>{prop.label}</h3>
     <Autocomplete
       disablePortal
       selectOnFocus
@@ -100,7 +102,7 @@ export const DrinkList = (label?: { label: string }) => (
       id="combo-box-demo"
       options={uniqueNames}
       groupBy={categories}
-      renderInput={(params) => <TextField {...params} label="" />}
+      renderInput={(params) => <TextField {...params} label="Drink" placeholder="Drink Name" />}
     />
   </Container>
 );

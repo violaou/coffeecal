@@ -8,12 +8,14 @@ import { MilkSelect } from './milkSelect';
 import { SizeSelect } from './sizeSelect';
 import { SweetsSelect } from './sweetSelect';
 import { ToppingSelect } from './toppingSelect';
+import { Counter } from '../components/IconCounter';
 
 import './drinkMain.scss';
 
 export const DrinkBase = () => (
   <Container maxWidth="md">
     <Stack spacing={4} divider={<Divider orientation="horizontal" flexItem />}>
+      <Counter />
       <DrinkList label="Select a Drink:" />
       <SizeSelect label="Select a Size:" />
       <MilkSelect label="Select a Milk:" />
