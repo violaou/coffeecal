@@ -30,6 +30,7 @@ const ThemeBtn = () => {
 export default function ToggleColorMode() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [mode, setMode] = React.useState<'light' | 'dark'>(prefersDarkMode ? 'dark' : 'light');
+
   const colorMode = React.useMemo(() => ({
     toggleColorMode: () => {
       setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
@@ -38,7 +39,16 @@ export default function ToggleColorMode() {
   []);
 
   const theme = React.useMemo(
-    () => createTheme({ palette: { mode } }),
+    () => createTheme({
+      palette: { mode },
+      typography: {
+        // body1: {
+        //   fontFamily: "'Open Sans', sans-serif",
+        //   fontWeight: 400,
+        //   fontSize: 16,
+        //   color: 'red',
+      },
+    }),
     [mode],
   );
 

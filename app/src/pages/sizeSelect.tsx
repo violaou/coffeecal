@@ -15,6 +15,7 @@ export const SizeSelect = (prop: { label: string }) => (
       autoComplete
       options={sizes}
       sx={{ width: 300 }}
+      defaultValue={sizes[2]}
       renderInput={(params) => <TextField {...params} label="Size" />}
     />
   </Container>
