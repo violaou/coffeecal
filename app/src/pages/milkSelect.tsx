@@ -15,7 +15,6 @@ export const MilkSelect = (prop: { label: string; default?: string}) => (
       disableClearable
       autoComplete
       options={milkOptions}
-      sx={{ width: 300 }}
       defaultValue={prop.default ?? ''}
       renderInput={(params) => <TextField {...params} label="Milk" />}
     />

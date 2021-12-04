@@ -1,9 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-else-return */
 /* eslint-disable react/jsx-props-no-spreading */
-import {
-  Checkbox, FormControlLabel, Grid, Container,
-} from '@mui/material';
+import { FormControlLabel, Grid, Container } from '@mui/material';
 import * as React from 'react';
 import flavorJSON from '../assets/data/flavours.json';
 import { ShotCounter } from '../components/ShotCounter';
