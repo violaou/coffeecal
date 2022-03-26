@@ -1,10 +1,11 @@
 [
-    { "name": "Cinnamon Dolce Sprinkles", "calories":"100"},
-    { "name": "Caramel Drizzle", "calories":"100"},
-    { "name": "Strawberry Drizzle", "calories":"100"},
-    { "name": "Mocha Drizzle", "calories":"100"},
-    { "name": "Cold Foam", "calories":"100", "coffeeOnly": true},
-    { "name": "Pumpkin Cream Cold Foam", "calories":"100", "coffeeOnly": true},
-    { "name": "Salted Caramel Cream Cold Foam", "calories":"100", "coffeeOnly": true},
-    { "name": "Frappuccino Chips", "calories":"100", "frapOnly": true}
+    { "name": "Cinnamon Dolce Sprinkles", "calories":"10"},
+    { "name": "Caramel Drizzle", "calories":"15"},
+    { "name": "Strawberry Drizzle", "calories":"15"},
+    { "name": "Mocha Drizzle", "calories":"10"},
+    { "name": "Java Chips", "calories":"30", "frapOnly": true},
+    { "name": "Whipped Cream", "calories":"115"},
+    { "name": "Cinnamon Almond Foam", "calories":"40"},
+    { "name": "Pumpkin CreamCold Foam", "calories":"205"},
+    { "name": "Vanilla Sweet Cream Cold Foam", "calories":"160"}
 ]

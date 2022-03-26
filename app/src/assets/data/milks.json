@@ -1,0 +1,9 @@
+[
+    { "name": "Coconut", "calories":"52"},
+    { "name": "Almond", "calories":"17"},
+    { "name": "Oat", "calories":"80"},
+    { "name": "Soy", "calories":"61"},
+    { "name": "Skim", "calories":"61"},
+    { "name": "2%", "calories":"72"},
+    { "name": "Whole", "calories":"86"}
+]

@@ -1,9 +1,9 @@
 [
-    {"name": "Honey Blend", "calories":"100"},
-    {"name": "Sugar", "calories":"100"},
-    {"name": "Sugar In The Raw", "calories":"100"},
-    {"name": "Honey", "calories":"100"},
-    {"name": "Splenda", "calories":"100"},
-    {"name": "Stevia", "calories":"100"},
-    {"name": "Stevia In The Raw®", "calories":"100"}
+    {"name": "Honey Blend", "calories":"43"},
+    {"name": "Sugar", "calories":"23"},
+    {"name": "Sugar In The Raw", "calories":"20"},
+    {"name": "Honey", "calories":"43"},
+    {"name": "Splenda", "calories":"0"},
+    {"name": "Stevia", "calories":"0"},
+    {"name": "Stevia In The Raw®", "calories":"0"}
 ]
