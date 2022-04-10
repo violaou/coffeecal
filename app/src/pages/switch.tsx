@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
+import * as React from 'react'
+import { styled } from '@mui/material/styles'
+import FormGroup from '@mui/material/FormGroup'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Switch from '@mui/material/Switch'
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -49,7 +49,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#8796A5' : '#aab4be',
     borderRadius: 20 / 2,
   },
-}));
+}))
 
 export default function CustomizedSwitches() {
   return (
@@ -59,5 +59,5 @@ export default function CustomizedSwitches() {
         label="MUI switch"
       />
     </FormGroup>
-  );
+  )
 }

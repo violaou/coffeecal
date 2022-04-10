@@ -1,7 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import Button from '@mui/material/Button'
 
 export default class HomePage extends Component {
   render() {
@@ -13,6 +13,6 @@ export default class HomePage extends Component {
           </Link>
         </div>
       </div>
-    );
+    )
   }
 }

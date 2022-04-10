@@ -30,9 +30,9 @@ module.exports = {
     },
   ],
   rules: {
-    'semi': 'off',
+    'semi': 0,
     'react/destructuring-assignment': 'off',
-    '@typescript-eslint/semi': ['error'],
+    '@typescript-eslint/semi': ['error', 'never'],
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: {
         delimiter: 'none', // 'none' or 'semi' or 'comma'
@@ -59,4 +59,4 @@ module.exports = {
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }], // Missing file extension ‘tsx’ for ‘./App’
     'react/prop-types': 'off',
   },
-};
+}

@@ -2,12 +2,12 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import {
   Checkbox, FormControlLabel, Grid, Container,
-} from '@mui/material';
-import * as React from 'react';
-import sweetsJSON from '../assets/data/sweeteners.json';
-import { ShotCounter } from '../components/ShotCounter';
+} from '@mui/material'
+import * as React from 'react'
+import sweetsJSON from '../assets/data/sweeteners.json'
+import { ShotCounter } from '../components/ShotCounter'
 
-const sweets: string[] = sweetsJSON.map((i) => i.name);
+const sweets: string[] = sweetsJSON.map((i) => i.name)
 
 export const SweetsSelect = (prop: { label: string }) => (
   <Container>
@@ -23,4 +23,4 @@ export const SweetsSelect = (prop: { label: string }) => (
       ))}
     </Grid>
   </Container>
-);
+)

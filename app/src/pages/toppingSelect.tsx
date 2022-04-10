@@ -2,12 +2,12 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import {
   Checkbox, FormControlLabel, Grid, Container,
-} from '@mui/material';
-import * as React from 'react';
-import toppingJSON from '../assets/data/toppings.json';
-import { ShotCounter } from '../components/ShotCounter';
+} from '@mui/material'
+import * as React from 'react'
+import toppingJSON from '../assets/data/toppings.json'
+import { ShotCounter } from '../components/ShotCounter'
 
-const toppings: string[] = toppingJSON.map((i) => i.name);
+const toppings: string[] = toppingJSON.map((i) => i.name)
 
 export const ToppingSelect = (prop: { label: string }) => (
   <Container>
@@ -20,4 +20,4 @@ export const ToppingSelect = (prop: { label: string }) => (
       ))}
     </Grid>
   </Container>
-);
+)
