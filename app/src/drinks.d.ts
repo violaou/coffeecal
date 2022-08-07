@@ -9,8 +9,8 @@ type DrinkSize =
     | 'Solo'
     | 'Doppio'
     | 'Triple'
-    | 'Quad';
-type Milk = 'Soy' | 'Coconut' | 'Nonfat' | 'Oat' | 'Whole' | '2%';
+    | 'Quad'
+type Milk = 'Soy' | 'Coconut' | 'Nonfat' | 'Oat' | 'Whole' | '2%'
 
 type Drink = {
     name: string
@@ -18,4 +18,4 @@ type Drink = {
     milk: Milk
     whip: boolean
     kcal: number
-};
+}

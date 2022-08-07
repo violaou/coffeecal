@@ -1,42 +1,42 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable max-len */
 /* eslint-disable react/destructuring-assignment */
-import * as React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import IconButton from '@mui/material/IconButton';
-import Box from '@mui/material/Box';
-import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
-import './App.scss';
-import HomePage from './pages/homePage';
-import { DrinkBase } from './pages/drinkMain';
+import * as React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import IconButton from '@mui/material/IconButton'
+import Box from '@mui/material/Box'
+import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles'
+import Brightness4Icon from '@mui/icons-material/Brightness4'
+import Brightness7Icon from '@mui/icons-material/Brightness7'
+import './App.scss'
+import HomePage from './pages/homePage'
+import { DrinkBase } from './pages/drinkMain'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
-const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+const ColorModeContext = React.createContext({ toggleColorMode: () => {} })
 
 const ThemeBtn = () => {
-  const colorMode = React.useContext(ColorModeContext);
-  const theme = useTheme();
+  const colorMode = React.useContext(ColorModeContext)
+  const theme = useTheme()
 
   return (
     <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
       {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
     </IconButton>
-  );
-};
+  )
+}
 
 export default function ToggleColorMode() {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const [mode, setMode] = React.useState<'light' | 'dark'>(prefersDarkMode ? 'dark' : 'light');
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+  const [mode, setMode] = React.useState<'light' | 'dark'>(prefersDarkMode ? 'dark' : 'light')
 
   const colorMode = React.useMemo(() => ({
     toggleColorMode: () => {
-      setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'))
     },
   }),
-  []);
+  [])
 
   const theme = React.useMemo(
     () => createTheme({
@@ -50,7 +50,7 @@ export default function ToggleColorMode() {
       },
     }),
     [mode],
-  );
+  )
 
   return (
     <ColorModeContext.Provider value={colorMode}>
@@ -80,5 +80,5 @@ export default function ToggleColorMode() {
         </Box>
       </ThemeProvider>
     </ColorModeContext.Provider>
-  );
+  )
 }
