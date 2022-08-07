@@ -16,7 +16,7 @@
     "@types/react-router": "^5.1.16",
     "@types/react-router-dom": "^5.1.8",
     "line-reader": "^0.4.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "object-hash": "^2.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
